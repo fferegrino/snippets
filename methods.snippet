@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Void method</Title>
+			<Author>Antonio Feregrino Bolaños</Author>
+			<Description>Creates a void method</Description>
+			<Shortcut>pvmet</Shortcut>
+		</Header>
+        <Snippet>
+			<Declarations>
+				<Literal>
+					<ID>MethodName</ID>
+					<ToolTip>Replace with your method name.</ToolTip>
+					<Default>MyVoidMethod</Default>
+				</Literal>
+				<Literal>
+					<ID>MethodBody</ID>
+					<ToolTip>Replace with your method body.</ToolTip>
+					<Default>// TODO: Code</Default>
+				</Literal>
+			</Declarations>
+            <Code Language="CSharp">
+<![CDATA[public void $MethodName$(){
+	$MethodBody$
+}]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+    <CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Data return method</Title>
+			<Author>Antonio Feregrino Bolaños</Author>
+			<Description>Creates a method</Description>
+			<Shortcut>met</Shortcut>
+		</Header>
+        <Snippet>
+			<Declarations>
+				<Literal>
+					<ID>MethodName</ID>
+					<ToolTip>Replace with your method name.</ToolTip>
+					<Default>MyVoidMethod</Default>
+				</Literal>
+				<Literal>
+					<ID>ReturnType</ID>
+					<ToolTip>Replace with your return type.</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>DefaultValue</ID>
+					<ToolTip>Replace with your default return type.</ToolTip>
+					<Default>0</Default>
+				</Literal>
+				<Literal>
+					<ID>MethodBody</ID>
+					<ToolTip>Replace with your method body.</ToolTip>
+					<Default>// TODO: Code</Default>
+				</Literal>
+			</Declarations>
+            <Code Language="CSharp">
+<![CDATA[public $ReturnType$ $MethodName$(){
+	$ReturnType$ result = $DefaultValue$;
+	$MethodBody$
+	return result;
+}]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
