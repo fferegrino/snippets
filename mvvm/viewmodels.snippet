@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>RelayCommand</Title>
+			<Author>Antonio Feregrino Bolaños</Author>
+			<Description>Create a simple relay command</Description>
+			<Shortcut>command</Shortcut>
+		</Header>
+        <Snippet>
+			<Declarations>
+				<Literal>
+					<ID>CommandInnerName</ID>
+					<ToolTip>Replace with your command inner name.</ToolTip>
+					<Default>myCommand</Default>
+				</Literal>
+				<Literal>
+					<ID>CommandName</ID>
+					<ToolTip>Replace with your command name as you want it to be called.</ToolTip>
+					<Default>MyCommand</Default>
+				</Literal>
+			</Declarations>
+            <Code Language="CSharp">
+<![CDATA[
+private RelayCommand $CommandInnerName$;
+public RelayCommand $CommandName$ {
+	get 
+	{
+		return $CommandInnerName$ ?? ($CommandInnerName$ = new RelayCommand(() => { 
+			// TODO: Code
+		}));
+	}
+}]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
