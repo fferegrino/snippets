@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Find control</Title>
+      <Author>@fferegirno</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>findc</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>varName</ID>
+          <ToolTip>varName</ToolTip>
+          <Default>varName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Object Editable="true">
+          <ID>ControlType</ID>
+          <ToolTip>ControlType</ToolTip>
+          <Default>ControlType</Default>
+          <Function>
+          </Function>
+          <Type>
+          </Type>
+        </Object>
+        <Object Editable="true">
+          <ID>parent</ID>
+          <ToolTip>parent</ToolTip>
+          <Default>parent</Default>
+          <Function>
+          </Function>
+          <Type>
+          </Type>
+        </Object>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$ControlType$ $varName$ = $parent$.FindControl("$varName$") as $ControlType$;]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
