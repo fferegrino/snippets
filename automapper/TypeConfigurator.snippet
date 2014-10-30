@@ -64,4 +64,51 @@
 ]]></Code>
     </Snippet>
   </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Map from</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>mapfrom</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>d</ID>
+          <ToolTip>Destination object</ToolTip>
+          <Default>d</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>DestProperty</ID>
+          <ToolTip>Destination property</ToolTip>
+          <Default>DestProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>s</ID>
+          <ToolTip>Source object</ToolTip>
+          <Default>s</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>SrcProperty</ID>
+          <ToolTip>Source property</ToolTip>
+          <Default>SrcProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[.ForMember($d$ => $d$.$DestProperty$, x => x.MapFrom($s$ => $s$.$SrcProperty$))]]></Code>
+    </Snippet>
+  </CodeSnippet>
 </CodeSnippets>
