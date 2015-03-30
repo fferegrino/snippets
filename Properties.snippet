@@ -23,14 +23,54 @@
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>MyReadOnly</ID>
-          <ToolTip>MyReadOnly</ToolTip>
-          <Default>MyReadOnly</Default>
+          <ID>myReadOnly</ID>
+          <ToolTip>myReadOnly</ToolTip>
+          <Default>myReadOnly</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[private readonly $int$ $MyReadOnly$;]]></Code>
+      <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[private readonly $int$ $myReadOnly$;$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Public constant</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>pconst</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>int</ID>
+          <ToolTip>Type</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>MyConstantValue</ID>
+          <ToolTip>MyConstantValue</ToolTip>
+          <Default>MyConstantValue</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>myValue</ID>
+          <ToolTip>myValue</ToolTip>
+          <Default>myValue</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[public const $int$ $MyConstantValue$ = $myValue$;$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
