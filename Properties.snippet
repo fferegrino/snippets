@@ -73,4 +73,37 @@
       <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[public const $int$ $MyConstantValue$ = $myValue$;$end$]]></Code>
     </Snippet>
   </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Public constant</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>pvirt</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>int</ID>
+          <ToolTip>Type</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>MyVirtualValue</ID>
+          <ToolTip>MyVirtualValue</ToolTip>
+          <Default>MyVirtualValue</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[public virtual $int$ $MyVirtualValue$ { get; set; }$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
 </CodeSnippets>
