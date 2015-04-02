@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Map ID</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>mapid</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Id</ID>
+          <ToolTip>Id</ToolTip>
+          <Default>Id</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Object Editable="true">
+          <ID>entityName</ID>
+          <ToolTip>Your entity name</ToolTip>
+          <Default>entity</Default>
+          <Function>
+          </Function>
+          <Type>
+          </Type>
+        </Object>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Id($entityName$ => $entityName$.$Id$);$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Map Property</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>mapprop</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>EntityName</ID>
+          <ToolTip>Your entity name</ToolTip>
+          <Default>entityName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Map($EntityName$ => $EntityName$.$Property$);$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>For Member</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>formember</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>x</ID>
+          <ToolTip>Your entity name</ToolTip>
+          <Default>entityName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Action</ID>
+          <ToolTip>Action to perform</ToolTip>
+          <Default>.Ignore()</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[.ForMember($x$ => $x$.$Property$, opt => opt.$Action$)$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>For Member</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>mapfrom</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>x</ID>
+          <ToolTip>Your entity name</ToolTip>
+          <Default>x</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Action</ID>
+          <ToolTip>Action to perform</ToolTip>
+          <Default>.Ignore()</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Property2</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[.ForMember($x$ => $x$.$Property$, opt => opt.MapFrom(src => src.$Property2$))$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
