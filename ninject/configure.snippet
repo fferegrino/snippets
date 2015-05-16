@@ -33,4 +33,37 @@
       <Code Language="csharp" Delimiter="$"><![CDATA[$container$.Bind<I$ThingToBind$>().To<$ThingToBind$>()]]></Code>
     </Snippet>
   </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Container bind in request scope</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bindtoreq</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>container</ID>
+          <ToolTip>container</ToolTip>
+          <Default>container</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ThingToBind</ID>
+          <ToolTip>ThingToBind</ToolTip>
+          <Default>ThingToBind</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$container$.Bind<I$ThingToBind$>().To<$ThingToBind$>().InRequestScope();]]></Code>
+    </Snippet>
+  </CodeSnippet>
 </CodeSnippets>
