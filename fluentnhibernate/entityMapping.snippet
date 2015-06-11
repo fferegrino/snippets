@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Map column Id</Title>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description>Add mapping for an entity identifier</Description>
+      <HelpUrl>http://github.con/fferegrino/snippets</HelpUrl>
+      <Shortcut>mapid</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Id</ID>
+          <ToolTip>Entity identifier</ToolTip>
+          <Default>Id</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Id(entity => entity.$Id$);$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Map not nullable property</Title>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description>Add mapping for a not nullable entity's property</Description>
+      <HelpUrl>http://github.con/fferegrino/snippets</HelpUrl>
+      <Shortcut>mapnn</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Map(entity => entity.$Property$).Not.Nullable();$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Map nullable property</Title>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description>Add mapping for a nullable entity's property</Description>
+      <HelpUrl>http://github.con/fferegrino/snippets</HelpUrl>
+      <Shortcut>mapnull</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Map(entity => entity.$Property$).Nullable();$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>References</Title>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description>Creates a reference from one entity to another</Description>
+      <HelpUrl>http://github.con/fferegrino/snippets</HelpUrl>
+      <Shortcut>reference</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[References(entity => entity.$Property$, "$Property$Id");$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Has many</Title>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description>Creates a has many association from one entity to another</Description>
+      <HelpUrl>http://github.con/fferegrino/snippets</HelpUrl>
+      <Shortcut>hmany</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[HasMany(entity => entity.$Property$);$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
