@@ -6,11 +6,9 @@
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
       <Title>Container bind</Title>
-      <Author>@fferegrino</Author>
-      <Description>
-      </Description>
-      <HelpUrl>
-      </HelpUrl>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description></Description>
+      <HelpUrl>http://github.com/fferegrino/snippets</HelpUrl>
       <Shortcut>bindto</Shortcut>
     </Header>
     <Snippet>
@@ -30,7 +28,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[$container$.Bind<I$ThingToBind$>().To<$ThingToBind$>()]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$container$.Bind<I$ThingToBind$>().To<$ThingToBind$>()$end$]]></Code>
     </Snippet>
   </CodeSnippet>
   <CodeSnippet Format="1.0.0">
@@ -39,11 +37,9 @@
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
       <Title>Container bind in request scope</Title>
-      <Author>@fferegrino</Author>
-      <Description>
-      </Description>
-      <HelpUrl>
-      </HelpUrl>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description></Description>
+      <HelpUrl>http://github.com/fferegrino/snippets</HelpUrl>
       <Shortcut>bindtoreq</Shortcut>
     </Header>
     <Snippet>
@@ -63,7 +59,38 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[$container$.Bind<I$ThingToBind$>().To<$ThingToBind$>().InRequestScope();]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$container$.Bind<I$ThingToBind$>().To<$ThingToBind$>().InRequestScope();$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Container bind in singleton scope</Title>
+      <Author>Antonio Feregrino Bolaños</Author>
+      <Description></Description>
+      <HelpUrl>http://github.com/fferegrino/snippets</HelpUrl>
+      <Shortcut>bindtosing</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>container</ID>
+          <ToolTip>container</ToolTip>
+          <Default>container</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ThingToBind</ID>
+          <ToolTip>ThingToBind</ToolTip>
+          <Default>ThingToBind</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$container$.Bind<I$ThingToBind$>().To<$ThingToBind$>().InSingletonScope();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

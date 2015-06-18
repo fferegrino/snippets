@@ -60,7 +60,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[.ForMember(s => s.$SourceProperty$, x => x.Ignore())
+      <Code Language="csharp" Delimiter="$"><![CDATA[.ForMember(entity => entity.$SourceProperty$, x => x.Ignore())
 ]]></Code>
     </Snippet>
   </CodeSnippet>
@@ -80,23 +80,9 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>d</ID>
-          <ToolTip>Destination object</ToolTip>
-          <Default>d</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
           <ID>DestProperty</ID>
           <ToolTip>Destination property</ToolTip>
           <Default>DestProperty</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>s</ID>
-          <ToolTip>Source object</ToolTip>
-          <Default>s</Default>
           <Function>
           </Function>
         </Literal>
@@ -108,7 +94,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[.ForMember($d$ => $d$.$DestProperty$, x => x.MapFrom($s$ => $s$.$SrcProperty$))]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[.ForMember(entity => entity.$DestProperty$, x => x.MapFrom(sss => sss.$SrcProperty$))]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
