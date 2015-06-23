@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Query over</Title>
+      <Author>@fferegrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>qover</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Object Editable="true">
+          <ID>EntityClass</ID>
+          <ToolTip>Your entity name</ToolTip>
+          <Default>EntityClass</Default>
+          <Function>
+          </Function>
+          <Type></Type>
+        </Object>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[_session.QueryOver<$EntityClass$>()$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
