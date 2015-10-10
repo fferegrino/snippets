@@ -6,7 +6,7 @@
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
       <Title>Map ID</Title>
-      <Author>@fferegrino</Author>
+      <Author>Antonio Feregrino</Author>
       <Description>
       </Description>
       <HelpUrl>
@@ -16,23 +16,14 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>Id</ID>
-          <ToolTip>Id</ToolTip>
-          <Default>Id</Default>
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
           <Function>
           </Function>
         </Literal>
-        <Object Editable="true">
-          <ID>entityName</ID>
-          <ToolTip>Your entity name</ToolTip>
-          <Default>entity</Default>
-          <Function>
-          </Function>
-          <Type>
-          </Type>
-        </Object>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Id($entityName$ => $entityName$.$Id$);$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Id(entity => entity.$Property$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
   <CodeSnippet Format="1.0.0">
@@ -41,7 +32,7 @@
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
       <Title>Map Property</Title>
-      <Author>@fferegrino</Author>
+      <Author>Antonio Feregrino</Author>
       <Description>
       </Description>
       <HelpUrl>
@@ -51,12 +42,31 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>EntityName</ID>
-          <ToolTip>Your entity name</ToolTip>
-          <Default>entityName</Default>
+          <ID>Property</ID>
+          <ToolTip>Property</ToolTip>
+          <Default>Property</Default>
           <Function>
           </Function>
         </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Map(entity => entity.$Property$);$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Map reference one-to-one</Title>
+      <Author>Antonio Feregrino</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>reference</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
         <Literal Editable="true">
           <ID>Property</ID>
           <ToolTip>Property</ToolTip>
@@ -65,7 +75,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Map($EntityName$ => $EntityName$.$Property$);$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[References(entity => entity.$Property$, "$Property$Id");$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

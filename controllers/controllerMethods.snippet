@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Post method</Title>
+			<Author>Antonio Feregrino</Author>
+			<Description>Add a post method that returns an IHttpActionResult</Description>
+			<Shortcut>post</Shortcut>
+		</Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>MethodName</ID>
+          <ToolTip>Method name</ToolTip>
+          <Default>MethodName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>IncomingModel</ID>
+          <ToolTip>Source property</ToolTip>
+          <Default>IncomingModel</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[
+		[Route("", Name = "$MethodName$Route")]
+		[HttpPost]
+		public IHttpActionResult $MethodName$(HttpRequestMessage requestMessage, $IncomingModel$)
+		{
+			var postedModel = null;
+			return new ModelPostedActionResult(requestMessage, postedModel);
+		}$end$
+]]></Code>
+    </Snippet>
+    </CodeSnippet>
+	
+    <CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Get method</Title>
+			<Author>Antonio Feregrino</Author>
+			<Description>Add a post method that returns an IHttpActionResult</Description>
+			<Shortcut>get</Shortcut>
+		</Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>MethodName</ID>
+          <ToolTip>Method name</ToolTip>
+          <Default>MethodName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ModelId</ID>
+          <ToolTip>Source property</ToolTip>
+          <Default>modelId</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>OutgoingModel</ID>
+          <ToolTip>Source property</ToolTip>
+          <Default>OutgoingModel</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[
+		[Route("{$ModelId$:int}", Name = "$MethodName$Route")]
+		[HttpGet]
+		public $OutgoingModel$ $MethodName$(HttpRequestMessage requestMessage, int $ModelId$)
+		{
+			$OutgoingModel$ model = null;
+			return model;
+		}$end$
+]]></Code>
+    </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
